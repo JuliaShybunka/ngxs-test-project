@@ -1,0 +1,140 @@
+<form [formGroup]='createUserForm'>
+  <div class="form-group" >
+    <label for="firstName">First name</label>
+    <input  
+    formControlName='firstName' 
+    type="text" 
+    class="form-control" 
+    id="firstName" 
+    placeholder="First Name"
+    [class.valid]="createUserForm.get('firstName').valid && 
+    (createUserForm.get('firstName').dirty || createUserForm.get('firstName').touched)"
+    [class.invalid]="createUserForm.get('firstName').invalid && 
+    (createUserForm.get('firstName').dirty || createUserForm.get('firstName').touched)" 
+    >
+    <div *ngIf="createUserForm.get('firstName').invalid && createUserForm.get('firstName').touched">
+      <p *ngIf="createUserForm.get('firstName')['errors']['required']">The input cannot be empty!</p>
+      <p *ngIf="createUserForm.get('firstName')['errors']['nameError']">Must start with a capital letter, no more than 15 letters long!</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last name</label>
+    <input  
+    formControlName='lastName' 
+    type="text" 
+    class="form-control" 
+    id="lastName" 
+    placeholder="Last Name"
+    [class.valid]="createUserForm.get('lastName').valid && 
+    (createUserForm.get('lastName').dirty || createUserForm.get('lastName').touched)"
+    [class.invalid]="createUserForm.get('lastName').invalid && 
+    (createUserForm.get('lastName').dirty || createUserForm.get('lastName').touched)" 
+    >
+    <div *ngIf="createUserForm.get('lastName').invalid && createUserForm.get('lastName').touched">
+      <p *ngIf="createUserForm.get('lastName')['errors']['required']">The input cannot be empty!</p>
+      <p *ngIf="createUserForm.get('lastName')['errors']['nameError']">Must start with a capital letter, no more than 15 letters long!</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="userName">User Name</label>
+    <input 
+     formControlName='username' 
+     type="text"
+      class="form-control"
+      id="userName" 
+      placeholder="User Name"
+      [class.valid]="createUserForm.get('username').valid && 
+      (createUserForm.get('username').dirty || createUserForm.get('username').touched)"
+      [class.invalid]="createUserForm.get('username').invalid && 
+      (createUserForm.get('username').dirty || createUserForm.get('username').touched)" 
+     >
+    <div *ngIf="createUserForm.get('username').invalid && createUserForm.get('username').touched">
+      <p *ngIf="createUserForm.get('username')['errors']['required']">The input cannot be empty!</p>
+      <p *ngIf="createUserForm.get('username')['errors']['nameError']">Must start with a capital letter, no more than 15 letters long!</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input  
+    formControlName='phone' 
+    type="text" 
+    class="form-control" 
+    id="phone" 
+    placeholder="Phone"
+    [class.valid]="createUserForm.get('phone').valid && 
+    (createUserForm.get('phone').dirty || createUserForm.get('phone').touched)"
+    [class.invalid]="createUserForm.get('phone').invalid && 
+    (createUserForm.get('phone').dirty || createUserForm.get('phone').touched)" 
+    >
+    <div *ngIf="createUserForm.get('phone').invalid && createUserForm.get('phone').touched">
+      <p *ngIf="createUserForm.get('phone')['errors']['required']">The input cannot be empty!</p>
+      <p *ngIf="createUserForm.get('phone')['errors']['nameError']">Must start with a capital letter, no more than 15 letters long!</p>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input  
+    formControlName='email' 
+    type="email"
+     class="form-control" 
+    id="email" 
+    placeholder="Email"
+    [class.valid]="createUserForm.get('email').valid && 
+    (createUserForm.get('email').dirty || createUserForm.get('email').touched)"
+    [class.invalid]="createUserForm.get('email').invalid && 
+    (createUserForm.get('email').dirty || createUserForm.get('email').touched)" 
+    >
+    <div *ngIf="createUserForm.get('email').invalid && createUserForm.get('email').touched">
+      <p *ngIf="createUserForm.get('email')['errors']['required']">The input cannot be empty!</p>
+      <p *ngIf="createUserForm.get('email')['errors']['nameError']">Must start with a capital letter, no more than 15 letters long!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-6">
+      <label for="password">Password</label>
+      <input  
+      formControlName='password' 
+      type="password" 
+      class="form-control" 
+      id="password"
+       autocomplete="new-password" 
+       placeholder="Password"
+       [class.valid]="createUserForm.get('password').valid && 
+       (createUserForm.get('password').dirty || createUserForm.get('password').touched)"
+       [class.invalid]="createUserForm.get('password').invalid && 
+       (createUserForm.get('password').dirty || createUserForm.get('password').touched)" 
+       >
+      <div *ngIf="createUserForm.get('password').invalid && createUserForm.get('password').touched">
+        <p *ngIf="createUserForm.get('password')['errors']['required']">The input cannot be empty!</p>
+        <p *ngIf="createUserForm.get('password')['errors']['nameError']">Must start with a capital letter, no more than 15 letters long!</p>
+      </div>
+    </div>
+    <div class="form-group col-6">
+      <label for="confirmPassword">Password</label>
+      <input  
+      formControlName='confirmPassword' 
+      type="password" 
+      class="form-control" 
+      id="confirm_password" 
+      autocomplete="new-password"
+       placeholder="Password" 
+       [class.valid]="createUserForm.get('confirmPassword').valid && 
+       (createUserForm.get('confirmPassword').dirty || createUserForm.get('confirmPassword').touched)"
+       [class.invalid]="createUserForm.get('confirmPassword').invalid && 
+       (createUserForm.get('confirmPassword').dirty || createUserForm.get('confirmPassword').touched)" 
+       >
+      <div *ngIf="createUserForm.get('confirmPassword').invalid && createUserForm.get('confirmPassword').touched">
+        <p *ngIf="createUserForm.get('confirmPassword')['errors']['required']">The input cannot be empty!</p>
+        <p *ngIf="createUserForm.get('confirmPassword')['errors']['nameError']">Must start with a capital letter, no more than 15 letters long!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div *ngIf='passwordMatch'>
+    Password must match
+  </div>
+
+
+  <button type="submit" class="btn btn-primary mt-2" (click)='createUser()'>Create</button>
+</form>

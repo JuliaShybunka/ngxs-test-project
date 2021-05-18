@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "duncan12thfth",
+      "email": "duncan@duncan.com",
+      "country": "australia",
+      "password": "123"
+    },
+    {
+      "firstName": "rge",
+      "lastName": "erge",
+      "username": "egkooij",
+      "phone": "egr",
+      "email": "erg",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 2
+    },
+    {
+      "firstName": "fgdrg",
+      "lastName": "rge",
+      "username": "erg",
+      "phone": "3425308876",
+      "email": "rgeg",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 16
+    },
+    {
+      "firstName": "hull",
+      "lastName": "jrtdjt",
+      "username": "esnt",
+      "phone": "rsdfh",
+      "email": "trdtn",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 17
+    },
+    {
+      "firstName": "okiju",
+      "lastName": "gwag",
+      "username": "ewrt",
+      "phone": "rxg",
+      "email": "fkbj",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 18
+    },
+    {
+      "firstName": "okiju",
+      "lastName": "gwag",
+      "username": "ewrt",
+      "phone": "rxg",
+      "email": "fkbj",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 19
+    },
+    {
+      "firstName": "8o",
+      "lastName": "87t78o",
+      "username": "t78o",
+      "phone": "t8o",
+      "email": "t8o",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 20
+    },
+    {
+      "firstName": "Julia",
+      "lastName": "mk",
+      "username": "ckhc",
+      "phone": "sdyku",
+      "email": "erty",
+      "password": "123",
+      "confirm_password": "123",
+      "id": 21
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "username": "",
+      "phone": "",
+      "email": "",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 22
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "job": "Plumber"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Spanner",
+      "category": "tools"
+    },
+    {
+      "id": 2,
+      "name": "Hammer",
+      "category": "tools"
+    },
+    {
+      "id": 3,
+      "name": "Screw driver",
+      "category": "tools"
+    },
+    {
+      "id": 4,
+      "name": "Paint brush",
+      "category": "paint"
+    },
+    {
+      "id": 5,
+      "name": "Paint roller",
+      "category": "paint"
+    },
+    {
+      "id": 6,
+      "name": "Paint",
+      "category": "paint"
+    }
+  ]
+}

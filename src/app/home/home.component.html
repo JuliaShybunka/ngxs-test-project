@@ -1,0 +1,46 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand">Navbar</a>
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <a  type="button" (click)='logout()' class="btn btn-primary">Logout</a>
+  </div>
+</nav>
+<div class="wrapper">
+  <!-- Sidebar  -->
+  
+  <nav id="sidebar"  [ngClass]="status ? 'active' : ''">
+      <div class="sidebar-header">
+          <h3> Sidebar</h3>
+      </div>
+
+      <ul class="list-unstyled components">
+          <li class="active">
+              <a routerLink='user-info' >User Info</a>
+          </li>
+          <li>
+              <a routerLink='user-search' >Users</a>
+          </li>
+          <li>
+            <a  routerLink='user-create'>Create User</a>
+          </li>
+        
+      </ul>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+
+              <button type="button" id="sidebarCollapse" (click)='hideSidebar()' class="btn btn-info">
+                  <i class="fas fa-align-left"></i>
+                  <span>Toggle Sidebar</span>
+              </button>
+              <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-align-justify"></i>
+              </button>
+          </div>
+      </nav>
+      <router-outlet></router-outlet>
+  </div>
+</div>
